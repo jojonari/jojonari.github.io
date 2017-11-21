@@ -25,4 +25,15 @@
     target: '#sideNav'
   });
 
+  setMonthWorkOnHanuri();
 })(jQuery); // End of use strict
+
+function setMonthWorkOnHanuri(){
+  var joinDayDate = new Date(2015, 10-1, 01);
+  var joinDate2 = new Date();
+  var years = joinDate2.getFullYear() - joinDayDate.getFullYear();
+  var months = joinDate2.getMonth() - joinDayDate.getMonth();
+  var days = joinDate2.getDate() - joinDayDate.getDate();
+  var differentMonth = years * 12 + months + (days >= 0 ? 0 : -1);
+  $("#monthsWork").html(differentMonth + " 개월 (2015. 10 - 현재)");
+}
