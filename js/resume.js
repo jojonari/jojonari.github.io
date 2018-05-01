@@ -30,8 +30,8 @@
 })(jQuery); // End of use strict
 
 function setMonthWork(){
-  //한우**이티
-  $("#monthsWork").html(getMonthDiff(new Date(2015, 10-1, 01)) + " 개월 (2015. 10 - 현재)");
+  //CA**24
+  $("#monthsWork").html(getMonthDiff(new Date(2018, 04-1, 16)) + " 개월 (2018. 04 - 현재)");
 }
 
 function setMonthActivity(){
